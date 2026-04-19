@@ -1,465 +1,689 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Ahmad Haytham CV</title>
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="Ahmad Haytham" name="keywords">
-        <meta content="Ahmad Haytham" name="description">
 
-        <!-- Favicon -->
-        <link href="img/favicon.ico" rel="icon">
+<head>
+    <title>Ahmad Haithem | Digital Marketing &amp; Web Development Specialist</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta
+        content="Ahmad Haithem Al Takla, Amazon PPC Specialist, Web Developer, Digital Marketing, Gear Doctors, echoTech Egypt, Portfolio"
+        name="keywords">
+    <meta
+        content="Portfolio and CV website for Ahmad Haithem Al Takla, a Digital Marketing & Web Development Specialist focused on Amazon PPC, web development, landing pages, and digital execution."
+        name="description">
+    <meta name="theme-color" content="#0f172a">
 
-        <!-- Google Web Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
 
-        <!-- Icon Font Stylesheet -->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Google Web Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-        <!-- Libraries Stylesheet -->
-        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-        <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
-        <!-- Customized Bootstrap Stylesheet -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
 
-        <!-- Template Stylesheet -->
-        <link href="css/style.css" rel="stylesheet">
-    </head>
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <body>
-        <!-- Spinner Start -->
-        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-                <span class="sr-only">Loading...</span>
-            </div>
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        .profile-meta {
+            font-size: 0.95rem;
+            line-height: 1.75;
+        }
+
+        .profile-meta a {
+            color: #cbd5e1;
+            word-break: break-word;
+        }
+
+        .mini-badge {
+            display: inline-block;
+            padding: 0.35rem 0.75rem;
+            margin: 0 0.4rem 0.5rem 0;
+            border-radius: 999px;
+            background: rgba(255, 255, 255, 0.08);
+            color: #e2e8f0;
+            font-size: 0.85rem;
+        }
+
+        .summary-card,
+        .timeline-card,
+        .certificate-card,
+        .language-card,
+        .project-note {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 16px;
+            padding: 1.25rem;
+            height: 100%;
+        }
+
+        .skill-card {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 16px;
+            padding: 1.5rem;
+            height: 100%;
+        }
+
+        .skill-card ul,
+        .timeline-card ul,
+        .certificate-card ul {
+            padding-left: 1.1rem;
+            margin-bottom: 0;
+        }
+
+        .skill-card li,
+        .timeline-card li,
+        .certificate-card li,
+        .language-card li {
+            margin-bottom: 0.55rem;
+            color: rgba(255, 255, 255, 0.82);
+        }
+
+        .timeline-label {
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            font-size: 0.78rem;
+            color: var(--primary);
+            margin-bottom: 0.55rem;
+            display: inline-block;
+        }
+
+        .project-card {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 16px;
+            overflow: hidden;
+            height: 100%;
+        }
+
+        .project-card .project-body {
+            padding: 1rem 1rem 1.15rem;
+        }
+
+        .project-card h6 {
+            color: #fff;
+            margin-bottom: 0.35rem;
+        }
+
+        .project-card p {
+            margin-bottom: 0;
+            color: rgba(255, 255, 255, 0.75);
+            font-size: 0.92rem;
+        }
+
+        .icon-link[aria-label] {
+            position: relative;
+        }
+
+        .legacy-archive {
+            display: none !important;
+        }
+
+        @media (max-width: 991.98px) {
+            .sticky-lg-top.vh-100 {
+                height: auto !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3.5rem; height: 3.5rem;" role="status"
+            aria-label="Loading page content">
+            <span class="sr-only">Loading...</span>
         </div>
-        <!-- Spinner End -->
+    </div>
+    <!-- Spinner End -->
 
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-4 sticky-lg-top vh-100">
-                    <div class="d-flex flex-column h-100 text-center overflow-auto shadow">
-                        <img class="w-100 img-fluid mb-4" src="img/profile.jpg" alt="Image">
-                        <h1 class="text-primary mt-2">Ahmad Haytham</h1>
-                        <div class="mb-4" style="height: 22px;">
-                            <h4 class="typed-text-output d-inline-block text-light"></h4>
-                            <div class="typed-text d-none">Web Designer, Web Developer, Front-End Developer, Back-End Developer, Apps Designer, Apps Developer, IT technical</div>
-                        </div>
-                        <div class="d-flex justify-content-center mt-auto mb-3">
-                            <a class="btn btn-secondary btn-square mx-1" href="https://www.facebook.com/AHM.ZUS/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-secondary btn-square mx-1" href="https://wa.me/201273761238?text=" target="_blank"><i class="fab fa-whatsapp"></i></a>
-							<a class="btn btn-secondary btn-square mx-1" href="mailto:azeuss.boy@gmail.com" target="_blank"><i class="fab fa-google"></i></a>
-							<a class="btn btn-secondary btn-square mx-1" href="tel:00201015474776" target="_blank"><i class="fa fa-phone-alt"></i></a>
-                        </div>
-                        <div class="d-flex align-items-end justify-content-between border-top">
-                            <a href="" class="btn w-100 border-end">Download CV</a>
-                        </div>
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-lg-4 sticky-lg-top vh-100">
+                <div
+                    class="d-flex flex-column h-100 text-center overflow-auto glass-card rounded-bottom shadow floating">
+                    <img class="w-100 img-fluid mb-4" src="img/profile.jpg" alt="Portrait of Ahmad Haithem Al Takla"
+                        style="border-bottom: 2px solid var(--secondary);">
+                    <h1 class="text-primary mt-2">Ahmad Haithem</h1>
+                    <div class="mb-4" style="min-height: 28px;">
+                        <h4 class="typed-text-output d-inline-block text-light"></h4>
+                        <div class="typed-text d-none">Digital Marketing Specialist, Amazon PPC Specialist, Web
+                            Development Specialist, Landing Page Builder, SEO-Focused Web Creator</div>
+                    </div>
+
+                    <div class="px-4 mb-4 profile-meta text-light">
+                        <p class="mb-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>Damascus, Syria</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt text-primary me-2"></i><a href="tel:+201273761238">+20
+                                127 376 1238</a></p>
+                        <p class="mb-2"><i class="fa fa-phone-alt text-primary me-2"></i><a
+                                href="tel:+963980387742">+963 980 387 742</a></p>
+                        <p class="mb-2"><i class="fa fa-envelope text-primary me-2"></i><a
+                                href="mailto:azeuss.boy@gmail.com">azeuss.boy@gmail.com</a></p>
+                        <p class="mb-0"><i class="fa fa-globe text-primary me-2"></i><a
+                                href="https://ahmad-haytham.github.io" target="_blank"
+                                rel="noopener noreferrer">ahmad-haytham.github.io</a></p>
+                    </div>
+
+                    <div class="px-4 mb-4 text-center">
+                        <span class="mini-badge">Amazon PPC</span>
+                        <span class="mini-badge">Web Development</span>
+                        <span class="mini-badge">SEO</span>
+                        <span class="mini-badge">Digital Execution</span>
+                    </div>
+
+                    <div class="d-flex justify-content-center mt-auto mb-3">
+                        <a aria-label="Facebook profile" class="btn btn-secondary btn-square mx-1 icon-link"
+                            href="https://www.facebook.com/AHM.ZUS/" target="_blank" rel="noopener noreferrer"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a aria-label="WhatsApp contact" class="btn btn-secondary btn-square mx-1 icon-link"
+                            href="https://wa.me/201273761238?text=" target="_blank" rel="noopener noreferrer"><i
+                                class="fab fa-whatsapp"></i></a>
+                        <a aria-label="Email Ahmad" class="btn btn-secondary btn-square mx-1 icon-link"
+                            href="mailto:azeuss.boy@gmail.com"><i class="fab fa-google"></i></a>
+                        <a aria-label="Portfolio website" class="btn btn-secondary btn-square mx-1 icon-link"
+                            href="https://ahmad-haytham.github.io" target="_blank" rel="noopener noreferrer"><i
+                                class="fas fa-laptop-code"></i></a>
+                    </div>
+                    <div class="d-flex align-items-end justify-content-between border-top">
+                        <a href="Ahmad_Haithem_ATS_CV.pdf" class="btn w-100 border-end" target="_blank"
+                            rel="noopener noreferrer">Download CV</a>
                     </div>
                 </div>
-                <div class="col-lg-8">
-                    <!-- About Start -->
-                    <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s">
-                        <h1 class="title pb-3 mb-5">About Me</h1>
-                        <p>I am a web and mobile app developer passionate about transforming innovative ideas into practical and effective digital solutions. I have extensive experience in building and designing interactive websites and developing web and mobile applications that provide a seamless and distinctive user experience. I always aim to deliver high-quality software solutions characterized by robust performance and flexibility, with a focus on fine details and technical innovation.</p>
-                        <div class="row mb-4">
-                            <div class="col-sm-6 py-1">
-                                <span class="fw-medium text-primary">Name:</span> Ahmad Haytham
-                            </div>
-                            <div class="col-sm-6 py-1">
-                                <span class="fw-medium text-primary">Birthday:</span> 3 Jan 1995
-                            </div>
-                            <div class="col-sm-6 py-1">
-                                <span class="fw-medium text-primary">Degree:</span> Middle
-                            </div>
-                            <div class="col-sm-6 py-1">
-                                <span class="fw-medium text-primary">Experience:</span> 4 Years
-                            </div>
-                            <div class="col-sm-6 py-1">
-                                <span class="fw-medium text-primary">Phone:</span> +2012 7376 1238
-                            </div>
-                            <div class="col-sm-6 py-1">
-                                <span class="fw-medium text-primary">Email:</span> azeuss.boy@gmail.com
-                            </div>
-                            <div class="col-sm-6 py-1">
-                                <span class="fw-medium text-primary">Address:</span> 10th of Ramadan city, Egypt
-                            </div>
-                            <div class="col-sm-6 py-1">
-                                <span class="fw-medium text-primary">Freelance:</span> Available
-                            </div>
-							<div class="col-sm-6 py-1">
-                                <span class="fw-medium text-primary">Nationality:</span> Syrian
+            </div>
+            <div class="col-lg-8">
+                <!-- About Start -->
+                <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s">
+                    <h1 class="title pb-3 mb-5">Professional Summary</h1>
+                    <div class="summary-card">
+                        <p class="mb-4">Results-driven Digital Marketing &amp; Web Development Specialist with hands-on
+                            experience in Amazon PPC, web development, and digital execution. Currently managing Amazon
+                            advertising for Gear Doctors across the US and Canada, optimizing hundreds of campaigns for
+                            5 ASINs and contributing to a 15% increase in sales and a 4% improvement in conversion rate.
+                        </p>
+                        <p class="mb-0">Founder of echoTech Egypt, delivering custom websites, e-commerce pages, landing
+                            pages, and digital design solutions using modern web technologies and SEO-focused practices.
+                        </p>
+                    </div>
+                    <div class="row mb-4 mt-4">
+                        <div class="col-sm-6 py-1">
+                            <span class="fw-medium text-primary">Name:</span> Ahmad Haithem Al Takla
+                        </div>
+                        <div class="col-sm-6 py-1">
+                            <span class="fw-medium text-primary">Primary Focus:</span> Amazon PPC &amp; Web Development
+                        </div>
+                        <div class="col-sm-6 py-1">
+                            <span class="fw-medium text-primary">Location:</span> Damascus, Syria
+                        </div>
+                        <div class="col-sm-6 py-1">
+                            <span class="fw-medium text-primary">Availability:</span> Open for freelance and
+                            growth-focused roles
+                        </div>
+                        <div class="col-sm-6 py-1">
+                            <span class="fw-medium text-primary">Phone:</span> +20 127 376 1238 / +963 980 387 742
+                        </div>
+                        <div class="col-sm-6 py-1">
+                            <span class="fw-medium text-primary">Email:</span> azeuss.boy@gmail.com
+                        </div>
+                        <div class="col-sm-6 py-1">
+                            <span class="fw-medium text-primary">Portfolio:</span> ahmad-haytham.github.io
+                        </div>
+                        <div class="col-sm-6 py-1">
+                            <span class="fw-medium text-primary">Languages:</span> Arabic (Native), English (B1)
+                        </div>
+                    </div>
+                </section>
+                <!-- About End -->
+
+                <!-- Skills Start -->
+                <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s">
+                    <h1 class="title pb-3 mb-5">Core Skills</h1>
+                    <div class="row g-4">
+                        <div class="col-md-6 col-xl-4">
+                            <div class="skill-card">
+                                <h5 class="mb-3 text-white">Amazon PPC &amp; Marketplace</h5>
+                                <ul>
+                                    <li>Amazon PPC campaign optimization</li>
+                                    <li>Keyword research and search term analysis</li>
+                                    <li>Bid adjustments and performance reporting</li>
+                                    <li>Competitor tracking and marketplace analysis</li>
+                                    <li>Excel and Google Sheets decision support</li>
+                                </ul>
                             </div>
                         </div>
-                        <div class="row g-4">
-                            <div class="col-md-4 col-lg-6 col-xl-4">
-                                <div class="d-flex bg-secondary p-4">
-                                    <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">4</h1>
-                                    <div class="ps-3">
-                                        <p class="mb-0">Years of</p>
-                                        <h5 class="mb-0">Experience</h5>
-                                    </div>
+                        <div class="col-md-6 col-xl-4">
+                            <div class="skill-card">
+                                <h5 class="mb-3 text-white">Web Development</h5>
+                                <ul>
+                                    <li>HTML, CSS, JavaScript, Vue.js</li>
+                                    <li>PHP, SQL, MySQL</li>
+                                    <li>WordPress and custom websites</li>
+                                    <li>E-commerce pages and landing pages</li>
+                                    <li>SEO-oriented website structure</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-4">
+                            <div class="skill-card">
+                                <h5 class="mb-3 text-white">Technical &amp; Digital Support</h5>
+                                <ul>
+                                    <li>Digital design execution</li>
+                                    <li>IT support and troubleshooting</li>
+                                    <li>Hardware, software, and networks</li>
+                                    <li>Accounting basics</li>
+                                    <li>Brand presence and user experience support</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Skills End -->
+
+                <!-- Experience Start -->
+                <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s">
+                    <h1 class="title pb-3 mb-5">Professional Experience</h1>
+                    <div class="row g-4">
+                        <div class="col-12">
+                            <div class="timeline-card">
+                                <span class="timeline-label">Jul 2024 - Present</span>
+                                <h5 class="mb-1 text-white">Amazon PPC Specialist</h5>
+                                <p class="mb-3 text-primary">Gear Doctors Brand US/CA</p>
+                                <ul>
+                                    <li>Manage Amazon PPC activity across US and Canada markets for 5 ASINs.</li>
+                                    <li>Optimize hundreds of campaigns through keyword research, bid adjustments, search
+                                        term analysis, and competitor tracking.</li>
+                                    <li>Contributed to a 15% increase in sales and a 4% improvement in conversion rate.
+                                    </li>
+                                    <li>Use Excel and Google Sheets to support reporting, performance analysis, and
+                                        campaign decision-making.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="timeline-card">
+                                <span class="timeline-label">Mar 2022 - Present</span>
+                                <h5 class="mb-1 text-white">Founder &amp; Web Developer</h5>
+                                <p class="mb-3 text-primary">echoTech Egypt</p>
+                                <ul>
+                                    <li>Founded and manage a startup focused on custom websites, e-commerce websites,
+                                        and landing pages.</li>
+                                    <li>Delivered 5 websites for 5 different companies, with 3 websites currently
+                                        active.</li>
+                                    <li>Create web layouts, digital visuals, and design assets to support brand presence
+                                        and user experience.</li>
+                                    <li>Work with HTML, CSS, JavaScript, Vue, PHP, MySQL, WordPress, and SEO-oriented
+                                        website structure.</li>
+                                    <li>Provide technical support knowledge across hardware, software, and
+                                        network-related needs when required.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Experience End -->
+
+                <!-- Services Start -->
+                <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s">
+                    <h1 class="title pb-3 mb-5">Services</h1>
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="service-item h-100">
+                                <i class="fa fa-2x fa-bullseye mx-auto mb-4"></i>
+                                <h5 class="mb-2">Amazon PPC Management</h5>
+                                <p class="mb-0">Campaign setup, optimization, keyword research, bid tuning, search term
+                                    analysis, and performance reporting for marketplace growth.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="service-item h-100">
+                                <i class="fa fa-2x fa-laptop-code mx-auto mb-4"></i>
+                                <h5 class="mb-2">Custom Website Development</h5>
+                                <p class="mb-0">Responsive websites built with modern front-end and back-end
+                                    technologies, tailored to business goals and brand positioning.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="service-item h-100">
+                                <i class="fa fa-2x fa-shopping-cart mx-auto mb-4"></i>
+                                <h5 class="mb-2">E-Commerce &amp; Landing Pages</h5>
+                                <p class="mb-0">Focused sales pages and conversion-led website sections designed to
+                                    support products, offers, and digital campaigns.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="service-item h-100">
+                                <i class="fa fa-2x fa-search mx-auto mb-4"></i>
+                                <h5 class="mb-2">SEO-Oriented Website Structure</h5>
+                                <p class="mb-0">Search-friendly page architecture, clean content hierarchy, and
+                                    practical optimization to support discoverability and performance.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="service-item h-100">
+                                <i class="fa fa-2x fa-palette mx-auto mb-4"></i>
+                                <h5 class="mb-2">Digital Design Support</h5>
+                                <p class="mb-0">Digital visuals, layout direction, and supporting assets that improve
+                                    brand consistency and the overall user experience.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="service-item h-100">
+                                <i class="fa fa-2x fa-tools mx-auto mb-4"></i>
+                                <h5 class="mb-2">Technical Support</h5>
+                                <p class="mb-0">Practical troubleshooting across hardware, software, and networks to
+                                    help teams keep operations stable and efficient.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Services End -->
+
+                <!-- Certifications Start -->
+                <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s">
+                    <h1 class="title pb-3 mb-5">Certifications</h1>
+                    <div class="row g-4">
+                        <div class="col-lg-8">
+                            <div class="certificate-card">
+                                <ul>
+                                    <li>English Language Training (B1) - English Today Center - May 2014 to Jun 2014
+                                    </li>
+                                    <li>ICDL / ECDL - IT Share Centers - Mar 2015 to Apr 2015</li>
+                                    <li>IT Hardware / Technical Support - IT Share Centers - Apr 2015 to May 2015</li>
+                                    <li>IT Network Engineering Basics - IT Share Centers - May 2015</li>
+                                    <li>WEB Front-End DEV (HTML, CSS, JS) - IT Share Centers - Jul 2016 to Aug 2016</li>
+                                    <li>WEB Back-End DEV (PHP, Laravel, MySQL) - IT Share Centers - Dec 2016 to Jan 2017
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="language-card">
+                                <h5 class="mb-3 text-white">Languages</h5>
+                                <ul class="ps-3 mb-0">
+                                    <li>Arabic: Native</li>
+                                    <li>English: B1</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Certifications End -->
+
+                <!-- Projects Start -->
+                <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s">
+                    <h1 class="title pb-3 mb-5">Projects</h1>
+                    <div class="project-note mb-4">
+                        <p class="mb-0">Selected visual work and live website examples from the original portfolio have
+                            been preserved and cleaned up here to keep the site structure intact while presenting the
+                            latest CV content more professionally.</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-12 text-center mb-2">
+                                    <ul class="list-inline mb-4" id="portfolio-flters">
+                                        <li class="btn btn-secondary glass-card border-0 active mx-1" data-filter="*"><i
+                                                class="fa fa-star me-2"></i>All</li>
+                                        <li class="btn btn-secondary glass-card border-0 mx-1" data-filter=".first"><i
+                                                class="fa fa-image me-2"></i>Design</li>
+                                        <li class="btn btn-secondary glass-card border-0 mx-1" data-filter=".second"><i
+                                                class="fa fa-laptop-code me-2"></i>Web Development</li>
+                                    </ul>
                                 </div>
                             </div>
-                            <div class="col-md-4 col-lg-6 col-xl-4">
-                                <div class="d-flex bg-secondary p-4">
-                                    <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">122</h1>
-                                    <div class="ps-3">
-                                        <p class="mb-0">Happy</p>
-                                        <h5 class="mb-0">Clients</h5>
+                            <div class="row portfolio-container">
+                                <div class="col-md-6 mb-4 portfolio-item first">
+                                    <div class="project-card">
+                                        <div class="position-relative overflow-hidden mb-0">
+                                            <img class="img-fluid w-100" src="img/curve.png"
+                                                alt="Curve design project showcase">
+                                            <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                                                <a href="img/curve.png" data-lightbox="portfolio"
+                                                    aria-label="Open Curve design preview">
+                                                    <i class="bi bi-plus text-light"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="project-body">
+                                            <h6>Curve Design</h6>
+                                            <p>Branding and visual presentation work preserved from the original
+                                                portfolio.</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-md-4 col-lg-6 col-xl-4">
-                                <div class="d-flex bg-secondary p-4">
-                                    <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">57</h1>
-                                    <div class="ps-3">
-                                        <p class="mb-0">Complete</p>
-                                        <h5 class="mb-0">Projects</h5>
+
+                                <div class="col-md-6 mb-4 portfolio-item first">
+                                    <div class="project-card">
+                                        <div class="position-relative overflow-hidden mb-0">
+                                            <img class="img-fluid w-100" src="img/echotech.png"
+                                                alt="echoTech Egypt visual identity showcase">
+                                            <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                                                <a href="img/echotech.png" data-lightbox="portfolio"
+                                                    aria-label="Open echoTech Egypt design preview">
+                                                    <i class="bi bi-plus text-light"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="project-body">
+                                            <h6>echoTech Egypt</h6>
+                                            <p>Visual presentation related to the startup brand and digital work
+                                                direction.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 mb-4 portfolio-item first">
+                                    <div class="project-card">
+                                        <div class="position-relative overflow-hidden mb-0">
+                                            <img class="img-fluid w-100" src="img/khater.png"
+                                                alt="Khater project design showcase">
+                                            <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                                                <a href="img/khater.png" data-lightbox="portfolio"
+                                                    aria-label="Open Khater design preview">
+                                                    <i class="bi bi-plus text-light"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="project-body">
+                                            <h6>Khater Project</h6>
+                                            <p>Design sample maintained from the original site archive.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 mb-4 portfolio-item first">
+                                    <div class="project-card">
+                                        <div class="position-relative overflow-hidden mb-0">
+                                            <img class="img-fluid w-100" src="img/naqaa.png"
+                                                alt="Naqaa project design showcase">
+                                            <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                                                <a href="img/naqaa.png" data-lightbox="portfolio"
+                                                    aria-label="Open Naqaa design preview">
+                                                    <i class="bi bi-plus text-light"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="project-body">
+                                            <h6>Naqaa Project</h6>
+                                            <p>Preserved design concept from the previous portfolio version.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 mb-4 portfolio-item second">
+                                    <div class="project-card">
+                                        <div class="position-relative overflow-hidden mb-0" style="height: 350px;">
+                                            <iframe src="https://aidochicken.com"
+                                                style="width:100%; height:100%; border:none;"
+                                                title="Aido Chicken website preview" loading="lazy"></iframe>
+                                            <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                                                <a href="https://aidochicken.com" target="_blank"
+                                                    rel="noopener noreferrer" aria-label="Open Aido Chicken website">
+                                                    <i class="bi bi-box-arrow-up-right text-light"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="project-body">
+                                            <h6>Aido Chicken</h6>
+                                            <p>Live website example preserved from the original portfolio showcase.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 mb-4 portfolio-item second">
+                                    <div class="project-card">
+                                        <div class="position-relative overflow-hidden mb-0" style="height: 350px;">
+                                            <iframe src="https://aldeekelzahaby.com/"
+                                                style="width:100%; height:100%; border:none;"
+                                                title="Al Deek El Zahaby website preview" loading="lazy"></iframe>
+                                            <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                                                <a href="https://aldeekelzahaby.com/" target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    aria-label="Open Al Deek El Zahaby website">
+                                                    <i class="bi bi-box-arrow-up-right text-light"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="project-body">
+                                            <h6>Al Deek El Zahaby</h6>
+                                            <p>Responsive website sample kept as part of the live portfolio archive.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-md-6 mb-4 portfolio-item second">
+                                    <div class="project-card">
+                                        <div class="position-relative overflow-hidden mb-0" style="height: 350px;">
+                                            <iframe src="https://maarouf-electrical.com/"
+                                                style="width:100%; height:100%; border:none;"
+                                                title="Maarouf Electrical website preview" loading="lazy"></iframe>
+                                            <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                                                <a href="https://maarouf-electrical.com/" target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    aria-label="Open Maarouf Electrical website">
+                                                    <i class="bi bi-box-arrow-up-right text-light"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="project-body">
+                                            <h6>Maarouf Electrical</h6>
+                                            <p>Live project preview retained while the surrounding CV content was
+                                                professionally updated.</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </section>
-                    <!-- About End -->
+                    </div>
+                </section>
+                <!-- Projects End -->
 
-                    <!-- Skills Start -->
-                    <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s">
-                        <h1 class="title pb-3 mb-5">Skills</h1>
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <div class="skill mb-4">
-                                    <div class="d-flex justify-content-between">
-                                        <p class="mb-2">HTML</p>
-                                        <p class="mb-2">95%</p>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                                <div class="skill mb-4">
-                                    <div class="d-flex justify-content-between">
-                                        <p class="mb-2">CSS</p>
-                                        <p class="mb-2">85%</p>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                                <div class="skill mb-4">
-                                    <div class="d-flex justify-content-between">
-                                        <p class="mb-2">PHP</p>
-                                        <p class="mb-2">90%</p>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="skill mb-4">
-                                    <div class="d-flex justify-content-between">
-                                        <p class="mb-2">Javascript</p>
-                                        <p class="mb-2">65%</p>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                                <div class="skill mb-4">
-                                    <div class="d-flex justify-content-between">
-                                        <p class="mb-2">It technicnics</p>
-                                        <p class="mb-2">85%</p>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-success" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                                <div class="skill mb-4">
-                                    <div class="d-flex justify-content-between">
-                                        <p class="mb-2">Digital Marketing</p>
-                                        <p class="mb-2">75%</p>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-info" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                            </div>
-							
-							 <div class="col-sm-6">
-							  <div class="skill mb-4">
-                                    <div class="d-flex justify-content-between">
-                                        <p class="mb-2">Photoshop</p>
-                                        <p class="mb-2">65%</p>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                                <div class="skill mb-4">
-                                    <div class="d-flex justify-content-between">
-                                        <p class="mb-2">Dart</p>
-                                        <p class="mb-2">65%</p>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                                <div class="skill mb-4">
-                                    <div class="d-flex justify-content-between">
-                                        <p class="mb-2">Flutter</p>
-                                        <p class="mb-2">65%</p>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-info" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                            </div>
+                <!-- Footer Start -->
+                <section class="wow fadeIn" data-wow-delay="0.1s">
+                    <div class="glass-card text-light text-center p-5 rounded">
+                        <div class="d-flex justify-content-center mb-4">
+                            <a aria-label="Facebook profile" class="btn btn-secondary btn-square mx-1"
+                                href="https://www.facebook.com/AHM.ZUS/" target="_blank" rel="noopener noreferrer"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a aria-label="WhatsApp contact" class="btn btn-secondary btn-square mx-1"
+                                href="https://wa.me/201273761238?text=" target="_blank" rel="noopener noreferrer"><i
+                                    class="fab fa-whatsapp"></i></a>
+                            <a aria-label="Email Ahmad" class="btn btn-secondary btn-square mx-1"
+                                href="mailto:azeuss.boy@gmail.com"><i class="fab fa-google"></i></a>
+                            <a aria-label="Portfolio website" class="btn btn-secondary btn-square mx-1"
+                                href="https://ahmad-haytham.github.io" target="_blank" rel="noopener noreferrer"><i
+                                    class="fas fa-laptop-code"></i></a>
                         </div>
-                    </section>
-                    <!-- Skills End -->
-
-                    <!-- Expericence Start -->
-                   <section class="py-5 wow fadeInUp" data-wow-delay="0.1s">
-    <h1 class="title pb-3 mb-5">Experience</h1>
-    <div class="border-start border-2 border-light pt-2 ps-5">
-        <div class="position-relative mb-4">
-            <span class="bi bi-arrow-right fs-4 text-light position-absolute" style="top: -5px; left: -50px;"></span>
-            <h5 class="mb-1">Web Developer</h5>
-            <p class="mb-2">Freelance | <small>2021 - Present</small></p>
-            <p>Developed and maintained responsive web applications using modern front-end and back-end technologies. Collaborated with design teams to translate UI/UX wireframes into high-quality code, ensuring cross-browser compatibility and optimal performance.</p>
-        </div>
-        <div class="position-relative mb-4">
-            <span class="bi bi-arrow-right fs-4 text-light position-absolute" style="top: -5px; left: -50px;"></span>
-            <h5 class="mb-1">Mobile App Developer</h5>
-            <p class="mb-2">Freelance | <small>2021 - Present</small></p>
-            <p>Designed and built robust mobile applications for both iOS and Android platforms using Flutter. Focused on delivering seamless user experiences and integrating various third-party APIs to enhance functionality.</p>
-        </div>
-        <div class="position-relative mb-4">
-            <span class="bi bi-arrow-right fs-4 text-light position-absolute" style="top: -5px; left: -50px;"></span>
-            <h5 class="mb-1">IT Support Specialist</h5>
-            <p class="mb-2">Freelance | <small>2021 - Present</small></p>
-            <p>Provided technical support and troubleshooting for hardware and software issues, ensuring smooth operation of IT systems. Assisted users with various technical queries and maintained network infrastructure.</p>
-        </div>
-		        <div class="position-relative mb-4">
-            <span class="bi bi-arrow-right fs-4 text-light position-absolute" style="top: -5px; left: -50px;"></span>
-            <h5 class="mb-1">Logo Designer</h5>
-            <p class="mb-2">Freelance | <small>2021 - Present</small></p>
-            <p>Created compelling and unique logos for various clients, focusing on brand identity and visual communication. Utilized design principles to develop memorable and impactful brand marks.</p>
-        </div>
-    </div>
-</section>
-                    <!-- Expericence End -->
-
-
-                    <!-- Services Start -->
-                    <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s">
-                        <h1 class="title pb-3 mb-5">Services</h1>
-                        <div class="row g-4">
-                            <div class="col-md-6">
-                                <div class="service-item">
-                                    <i class="fa fa-2x fa-laptop-code mx-auto mb-4"></i>
-                                    <h5 class="mb-2">Web Design</h5>
-                                    <p class="mb-0">Design attractive, responsive, and user-friendly websites that meet your business goals.</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="service-item">
-                                    <i class="fab fa-2x fa-android mx-auto mb-4"></i>
-                                    <h5 class="mb-2">Apps Development</h5>
-                                    <p class="mb-0">Building powerful and effective mobile applications for Android and iOS devices, with a focus on user experience.</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="service-item">
-                                    <i class="fa fa-2x fa-search mx-auto mb-4"></i>
-                                    <h5 class="mb-2">SEO</h5>
-                                    <p class="mb-0">Improve your website's search engine visibility to increase organic traffic and reach a wider audience.</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="service-item">
-                                    <i class="fa fa-2x fa-edit mx-auto mb-4"></i>
-                                    <h5 class="mb-2">Content Creating</h5>
-                                    <p class="mb-0">Develop engaging, search engine-optimized content, including texts, articles, and descriptions.</p>
-                                </div>
-                            </div>
-							<div class="col-md-6">
-                                <div class="service-item">
-                                    <i class="fa fa-2x fa-cog mx-auto mb-4"></i>
-                                    <h5 class="mb-2">IT technicnics</h5>
-                                    <p class="mb-0">Maintaining computers, supervising the efficient operation of devices, and managing networks</p>
-                                </div>
-                            </div>
-							<div class="col-md-6">
-                                <div class="service-item">
-                                    <i class="fa fa-2x fa-image mx-auto mb-4"></i>
-                                    <h5 class="mb-2">Logo Design</h5>
-                                    <p class="mb-0">Crafting unique and memorable logos that represent your brand identity and vision effectively.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <!-- Services End -->
-
-                    <!-- Portfolio Start -->
-                     <!-- Portfolio Start -->
-                    <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s">
-                        <h1 class="title pb-3 mb-5">Projects</h1>
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="row">
-                                    <div class="col-12 text-center mb-2">
-                                        <ul class="list-inline mb-4" id="portfolio-flters">
-                                            <li class="btn btn-secondary active"  data-filter="*"><i class="fa fa-star me-2"></i>All</li>
-                                            <li class="btn btn-secondary" data-filter=".first"><i class="fa fa-laptop-code me-2"></i>Design</li>
-                                            <li class="btn btn-secondary" data-filter=".second"><i class="fa fa-mobile-alt me-2"></i>Web Development</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="row portfolio-container">
-
-    <div class="col-md-6 mb-4 portfolio-item first">
-        <div class="position-relative overflow-hidden mb-2">
-            <img class="img-fluid w-100" src="img/curve.png" alt="وصف المشروع 1">
-            <div class="portfolio-btn d-flex align-items-center justify-content-center">
-                <a href="img/curve.png" data-lightbox="portfolio">
-                    <i class="bi bi-plus text-light"></i>
-                </a>
+                        <p class="m-0 text-muted">&copy; All Rights Reserved. Updated professionally based on the latest
+                            ATS CV.</p>
+                    </div>
+                </section>
+                <!-- Footer End -->
             </div>
         </div>
     </div>
 
-					  <div class="col-md-6 mb-4 portfolio-item first">
-        <div class="position-relative overflow-hidden mb-2">
-            <img class="img-fluid w-100" src="img/echotech.png" alt="وصف المشروع 3">
-            <div class="portfolio-btn d-flex align-items-center justify-content-center">
-                <a href="img/echotech.png" data-lightbox="portfolio">
-                    <i class="bi bi-plus text-light"></i>
-                </a>
-            </div>
+    <!-- Legacy archive preserved intentionally: old visible content kept inside the file without being deleted -->
+    <section class="legacy-archive" aria-hidden="true" id="legacy-content-backup">
+        <div>
+            <h2>Legacy Sidebar Identity</h2>
+            <p>Name: Ahmad Haytham</p>
+            <p>Roles: Web Designer, Web Developer, Front-End Developer, Back-End Developer, Apps Designer, Apps
+                Developer, IT Technician</p>
         </div>
-    </div>
-
-					  <div class="col-md-6 mb-4 portfolio-item first">
-        <div class="position-relative overflow-hidden mb-2">
-            <img class="img-fluid w-100" src="img/khater.png" alt="وصف المشروع 3">
-            <div class="portfolio-btn d-flex align-items-center justify-content-center">
-                <a href="img/khater.png" data-lightbox="portfolio">
-                    <i class="bi bi-plus text-light"></i>
-                </a>
-            </div>
+        <div>
+            <h2>Legacy About Content</h2>
+            <p>I am a web and mobile app developer passionate about transforming innovative ideas into practical and
+                effective digital solutions. I have extensive experience in building and designing interactive websites
+                and developing web and mobile applications that provide a seamless and distinctive user experience. I
+                always aim to deliver high-quality software solutions characterized by robust performance and
+                flexibility, with a focus on fine details and technical innovation.</p>
+            <p>Name: Ahmad Haytham | Birthday: 3 Jan 1995 | Degree: Middle | Experience: 4 Years | Phone: +2012 7376
+                1238 | Email: azeuss.boy@gmail.com | Address: 10th of Ramadan city, Egypt | Freelance: Available |
+                Nationality: Syrian</p>
+            <p>Counters: 4 Years of Experience | 122 Happy Clients | 57 Complete Projects</p>
         </div>
-    </div>
-									  <div class="col-md-6 mb-4 portfolio-item first">
-        <div class="position-relative overflow-hidden mb-2">
-            <img class="img-fluid w-100" src="img/naqaa.png" alt="وصف المشروع 3">
-            <div class="portfolio-btn d-flex align-items-center justify-content-center">
-                <a href="img/naqaa.png" data-lightbox="portfolio">
-                    <i class="bi bi-plus text-light"></i>
-                </a>
-            </div>
+        <div>
+            <h2>Legacy Skills</h2>
+            <p>HTML 95%, CSS 85%, PHP 90%, Javascript 65%, IT Technician 85%, Digital Marketing 75%, Photoshop 65%, Dart
+                65%, Flutter 65%</p>
         </div>
-    </div>
-
-    <div class="col-md-6 mb-4 portfolio-item second">
-        <div class="position-relative overflow-hidden mb-2" style="height: 350px;">
-            <iframe src="https://aidochicken.com" style="width:100%; height:100%; border:none;" title="موقع المشروع 1"></iframe>
-            <div class="portfolio-btn d-flex align-items-center justify-content-center">
-                <a href="https://aidochicken.com" target="_blank">
-                    <i class="bi bi-box-arrow-up-right text-light"></i>
-                </a>
-            </div>
+        <div>
+            <h2>Legacy Experience</h2>
+            <p>Web Developer | Freelance | 2021 - Present</p>
+            <p>Mobile App Developer | Freelance | 2021 - Present</p>
+            <p>IT Support Specialist | Freelance | 2021 - Present</p>
+            <p>Logo Designer | Freelance | 2021 - Present</p>
         </div>
-    </div>
-
-  
-
-    <div class="col-md-6 mb-4 portfolio-item second">
-        <div class="position-relative overflow-hidden mb-2" style="height: 350px;">
-            <iframe src="https://aldeekelzahaby.com/" style="width:100%; height:100%; border:none;" title="موقع المشروع 2"></iframe>
-            <div class="portfolio-btn d-flex align-items-center justify-content-center">
-                <a href="https://aldeekelzahaby.com/" target="_blank">
-                    <i class="bi bi-box-arrow-up-right text-light"></i>
-                </a>
-            </div>
+        <div>
+            <h2>Legacy Services</h2>
+            <p>Web Design, Apps Development, SEO, Content Creating, IT Technician, Logo Design</p>
         </div>
-    </div>
-					
- <div class="col-md-6 mb-4 portfolio-item second">
-        <div class="position-relative overflow-hidden mb-2" style="height: 350px;">
-            <iframe src="https://express-metal.com/" style="width:100%; height:100%; border:none;" title="موقع المشروع 2"></iframe>
-            <div class="portfolio-btn d-flex align-items-center justify-content-center">
-                <a href="https://express-metal.com/" target="_blank">
-                    <i class="bi bi-box-arrow-up-right text-light"></i>
-                </a>
-            </div>
+        <div>
+            <h2>Legacy Project Assets</h2>
+            <p>curve.png, echotech.png, khater.png, naqaa.png, aidochicken.com, aldeekelzahaby.com, express-metal.com,
+                maarouf-electrical.com</p>
         </div>
-    </div>
-</div>
+    </section>
 
-				     <div class="col-md-6 mb-4 portfolio-item second">
-        <div class="position-relative overflow-hidden mb-2" style="height: 350px;">
-            <iframe src="https://maarouf-electrical.com/" style="width:100%; height:100%; border:none;" title="موقع المشروع 2"></iframe>
-            <div class="portfolio-btn d-flex align-items-center justify-content-center">
-                <a href="https://maarouf-electrical.com/" target="_blank">
-                    <i class="bi bi-box-arrow-up-right text-light"></i>
-                </a>
-            </div>
-        </div>
-    </div>
-</div>
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top" aria-label="Back to top"><i class="fa fa-angle-double-up"></i></a>
 
-				
-                            </div>
-                        </div>
-                    </section>
-                    <!-- Portfolio End -->
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/typed/typed.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
 
-           
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
 
+    <!-- Template Javascript -->
+    <script src="js/particles.js"></script>
+    <script src="js/main.js"></script>
+</body>
 
-                    <!-- Footer Start -->
-                    <section class="wow fadeIn" data-wow-delay="0.1s">
-                        <div class="bg-secondary text-light text-center p-5">
-                            <div class="d-flex justify-content-center mb-4">
-								 <a class="btn btn-dark btn-square mx-1" href="https://www.facebook.com/AHM.ZUS/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-dark btn-square mx-1" href="https://wa.me/201273761238?text=" target="_blank"><i class="fab fa-whatsapp"></i></a>
-							<a class="btn btn-dark btn-square mx-1" href="mailto:azeuss.boy@gmail.com" target="_blank"><i class="fab fa-google"></i></a>
-							<a class="btn btn-dark btn-square mx-1" href="tel:00201015474776" target="_blank"><i class="fa fa-phone-alt"></i></a>
-                            </div>
-							<p class="m-0">&copy; All Rights Reserved. Designed by Ahmad Haytham</p>
-                        </div>
-                    </section>
-                    <!-- Footer End -->
-                </div>
-            </div>
-        </div>
-
-        
-        <!-- Back to Top -->
-        <a href="#" class="back-to-top"><i class="fa fa-angle-double-up"></i></a>
-        
-        <!-- JavaScript Libraries -->
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-        <script src="lib/wow/wow.min.js"></script>
-        <script src="lib/typed/typed.min.js"></script>
-        <script src="lib/easing/easing.min.js"></script>
-        <script src="lib/waypoints/waypoints.min.js"></script>
-        <script src="lib/counterup/counterup.min.js"></script>
-        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-        <script src="lib/isotope/isotope.pkgd.min.js"></script>
-        <script src="lib/lightbox/js/lightbox.min.js"></script>
-
-        <!-- Contact Javascript File -->
-        <script src="mail/jqBootstrapValidation.min.js"></script>
-        <script src="mail/contact.js"></script>
-
-        <!-- Template Javascript -->
-        <script src="js/main.js"></script>
-    </body>
 </html>
